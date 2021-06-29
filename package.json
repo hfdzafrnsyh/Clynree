@@ -8,6 +8,7 @@
     "serve": "http-server ./dist",
     "build": "webpack --config webpack.prod.js",
     "build-image": "node sharp.js",
+    "predeploy" : "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "karma start",
     "lint": "eslint ./src",
